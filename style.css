@@ -1,0 +1,73 @@
+/* ------------------------------------------------------------------------------------------ */
+/* CSS Reset
+/* ------------------------------------------------------------------------------------------ */
+
+*,*::before,*::after {
+  box-sizing: border-box;                         /* Simplify Size Calculations               */
+}
+
+* {
+  margin: 0;                                      /* Remove default Margin values             */
+  padding: 0;                                     /* Remove default Padding values            */
+}
+
+html {
+  color-scheme: dark light;                       /* Use User-Agent styles for Dark Mode      */
+  hanging-punctuation: first last;                /* Allow Punctuations to hang at both sides */
+}
+
+:has(:target) {
+  scroll-behavior: smooth;                        /* Enable Smooth Scrolling                  */
+  scroll-padding-block: 2rem;                     /* Set the offset for the viewing region    */
+}
+
+body {
+  min-block-size: 100dvh;                         /* Make Body element as long as the screen  */
+  max-inline-size: 40rem;                         /* Limit the Maximum Width                  */
+  margin-inline: auto;                            /* Center the Body on the screen            */
+  padding-inline: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-wrap: balance;                             /* Balance the wrapped lines on Headings    */
+}
+
+p,li {
+  text-wrap: pretty;                              /* Prevent Orphans in Body Text             */
+}
+
+input,button,textarea,select {
+  font: inherit;                                  /* Remove Built-In Typograpght styles       */
+}
+
+img,svg,picture,video,canvas {
+  display: block;                                 /* Make media elements Block-Level          */
+  max-inline-size: 100%;                          /* Make media elements Responsive           */
+  block-size: auto;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* WhiteSpace
+/* ------------------------------------------------------------------------------------------ */
+
+h1,h2,h3,h4,h5,h6 {
+  margin-block: 1em 0.5em;
+}
+
+p,li {
+  margin-block: 0.5em;
+}
+
+ul, ol {
+  padding-inline-start: 1rem;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* TypoGraphy
+/* ------------------------------------------------------------------------------------------ */
+
+p,li {
+  line-height: 1.6;
+}
+
+/* ------------------------------------------------------------------------------------------ */
